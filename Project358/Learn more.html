@@ -1,0 +1,120 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Logo.css"/>
+    <link type="text/css" rel="stylesheet" href="Menue.css" />
+<style>
+
+
+div.card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  margin:1%;
+  text-align: center;
+  font-family: arial;
+  float:left;
+  position:absolute; 
+}
+
+div .text{
+
+position:relative;
+top:70px;
+left:10px;
+}
+
+p {
+font-size:14px;
+}
+
+
+</style>
+
+
+    <script>
+var index =0;
+var imageCounter=0;
+function dc(){
+var image = ["Images/schefflera-on-lava-c07d4c.png", "Images/Bali.png", "Images/schefflera-on-lava-a06f0e.png"];
+var text = [
+
+"About Bali",
+"Life on Mars? This space-age plant looks like she comes from a galaxy far, far away. Bali is rooted in a lava rock, which makes her extra easy to care for -- pretty cool, right? This method of growing scheffleras is becoming ever-more popular, and it looks cool to boot. All you need to do is keep her in water and let this space cadet do her thing.",
+
+"QUICK FACTS",
+"<strong>Botanical name:</strong>Schefflera Nora</br><strong>Nickname:</strong>Life on Lava, Lava Rock, Umbrella Tree</br><strong>Plant type:</strong>Evergreen perennial / indoor</br><strong>Toxic?:</strong>Toxic to pets</br><strong>Current Height (including pot):</strong>30cm</br><strong>Pro level:</strong>Easy</br>Bali comes with a tray and so does not need a pot or any soil.",
+
+"HOW TO CARE FOR BALI (LIFE ON LAVA)",
+"Keep Bali's tray full of water at all times - she'll soak it right up. No need to water her from the top. Bali isn't a fan of tap water as the limescale turns her rock white, so we always suggest using distilled or filtered water.</br>Keeping Bali at a spot that has plently of indirect light will ensure that she thrives!</br>She likes a bit of humidity, so try spritzing her leaves every so often with a plant mister. You can also try the other recommended methods for increasing humidity in our Care Guide."
+
+];
+
+
+document.getElementById("title").innerHTML=text[index];
+document.getElementById("image").src=image[imageCounter];
+imageCounter++;
+index++;
+document.getElementById("ptext").innerHTML=text[index];
+index++;
+
+
+if (index == 6) { index = 0; }
+
+if (imageCounter == 3) { imageCounter = 0; }
+
+}
+
+
+setInterval("dc();", 3000);
+    </script>
+
+</head>
+
+
+<body>
+    <div class="hdive">
+        <h1 class="h1_title" align>Learn more</h1>
+    </div>
+    <div class="navbar">
+        <a href="Home-Page.html">Home page</a>
+        <a href="log in.html">Log in</a>
+        <a href="Sign Up.html">Sign up</a>
+    </div>
+
+
+    <div>
+        <div class="card" style="position:relative; top:50px;">
+            <img src="Images/schefflera-on-lava-c07d4c.png" alt="Dorothy" style="width:100%" id="image">
+            <h1>Bali</h1>
+
+
+        </div>
+
+
+
+        <section class="text">
+            <h1 id="title">About Bali</h1>
+      <p id="ptext">Life on Mars? This space-age plant looks like she comes from a galaxy far, far away. Bali is rooted in a lava rock, which makes her extra easy to care for -- pretty cool, right? This method of growing scheffleras is becoming ever-more popular, and it looks cool to boot. All you need to do is keep her in water and let this space cadet do her thing.</p>
+
+
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>

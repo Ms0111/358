@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="Logo.css" />
+    <link type="text/css" rel="stylesheet" href="Menue.css" />
+    <link type="text/css" rel="stylesheet" href="footer.css" />
+    <title></title>
+    <style>
+
+
+
+input[type=text], input[type=password], input[type=email] {
+  width: 800px;
+  height:20px;
+  padding: 40px;
+  //margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  position:relative;
+  top: 100px;
+  left:300px;
+}
+
+input[type=radio], label{
+    position:relative;
+    top:120px;
+    left:295px;
+
+
+}
+
+button {
+  background-color:black;
+  color: white;
+  padding: 14px 20px;
+  //margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 880px;
+  height:60px;
+  opacity: 0.9;
+  position: relative;
+  top: 180px;
+  left: 300px;
+  
+}
+
+
+footer {
+        background-color:black;
+        position:absolute;
+        width: 100%;
+        height: 200px;
+        top:1500px;
+        margin-top:50;
+        
+        
+       }
+
+    footer p {
+        color:white;
+        
+    }
+
+        footer p a {
+            text-decoration:none;
+            color:white;
+
+        }
+
+
+    </style>
+
+    <script>
+        function add_box() {
+            var p_handle = document.getElementById("dynmaci_box");
+            if (document.getElementById("add_com").checked == true) {
+
+                var dynaic_td = document.createElement("input");
+                dynaic_td.setAttribute("type", "text");
+                dynaic_td.setAttribute("name", "other_id");
+                dynaic_td.setAttribute("id", "other_td_id");
+
+                p_handle.appendChild(dynaic_td);
+
+            } else {
+                var dynmic_td_handel = document.getElementById("other_td_id");
+                p_handle.removeChild(dynmic_td_handel);
+            }
+        }
+    </script>
+</head>
+<body bgcolor="lightgray">
+    <div class="hdive"><h1 class="h1_title">Suggestions and Complaints</h1></div>
+    <div class="navbar">
+        <a href="Home-Page.html">Home page</a>
+        <a href="log in.html">Log in</a>
+        <a href="Sign Up.html">Sign up</a>
+    </div>
+
+    <form action="#">
+        
+
+        <label for="fLname"><b></b></label>
+        <input type="text" placeholder="Enter first and last name" name="fLname" required>
+        <br /><br />
+
+        <label for="email"><b></b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+        <br /><br />
+        <p id="dynmaci_box">
+            <label>
+                Is our service got your expectation ?</br>
+                Yes: <input type="checkbox" name=" yes" />
+                </br>
+                No: <input type="checkbox" name=" no" />
+                </br>
+                Add comment: <input id="add_com" onclick="add_box();" type="checkbox" name="comment" />
+                </br></br>
+
+            </label>       
+        </p>
+       
+        <br /><br />
+        <input type="radio" name="gender" value="male" checked>
+        <label>Male</label>
+
+        <input type="radio" name="gender" value="female">
+        <label>Female</label>
+
+        <div class="clearfix">
+
+            <button type="submit" class="signupbtn">submit</button>
+        </div>
+    </form>
+
+    <footer>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">Suggestions and Complaints</a></p>
+        <p><a href="Learn more.html">Learn more about plants</a></p>
+        <p><a href="Sign Up.html">Sign Up</a></p>
+        <p><a href="#Top">Top</a><p>
+            <a name="bottom" />
+
+            <img src="Images/social-media-icon-set-vector.jpg" usemap="#main_map" width="200" height="200" style="position:relative; bottom:188px; left:500px;" />
+            <a name="#main_map">
+                <map name="main_map">
+                    <area shape="circle" href="https://www.facebook.com/index.php" alt="Image One" coords="52,53,35">
+                    <area shape="circle" href="https://www.instagram.com" alt="Image One" coords="148,53,35">
+                    <area shape="circle" href="https://twitter.com/" alt="Image One" coords="148,147,35">
+                    <area shape="circle" href="https://www.youtube.com" alt="Image One" coords="52,147,35">
+                </map>
+            </a>
+    </footer>
+
+    <footer>
+        <p><a href="About us.html">About us</a></p>
+        <p><a href="Suggestions and Complaints.html">Suggestions and Complaints</a></p>
+        <p><a href="Learn more.html">Learn more about plants</a></p>
+        <p><a href="Sign Up.html">Sign Up</a></p>
+        <p><a href="#Top">Top</a><p>
+            <a name="bottom" />
+
+            <img src="Images/social-media-icon-set-vector.jpg" usemap="#main_map" width="200" height="200" style="position:relative; bottom:188px; left:500px;" />
+            <a name="#main_map">
+                <map name="main_map">
+                    <area shape="circle" href="https://www.facebook.com/index.php" alt="Image One" coords="52,53,35">
+                    <area shape="circle" href="https://www.instagram.com" alt="Image One" coords="148,53,35">
+                    <area shape="circle" href="https://twitter.com/" alt="Image One" coords="148,147,35">
+                    <area shape="circle" href="https://www.youtube.com" alt="Image One" coords="52,147,35">
+                </map>
+            </a>
+    </footer>
+</body>
+</html>
